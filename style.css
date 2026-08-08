@@ -1,32 +1,225 @@
-body{
+/* ==========================================
+   GENERAL PAGE
+========================================== */
+
+html,
+body {
+
+    margin: 0;
+
+    padding: 0;
+
+    width: 100%;
+
+    min-height: 100%;
+
+    font-family: Arial, sans-serif;
+
+    background-image: url("background.jpg");
+
     background-size: cover;
-}
-.heading
-{
-    font-size: 23px;
-    width: 100%;
-    margin: 0px;
+
+    background-position: center;
+
+    background-attachment: fixed;
+
 }
 
-.copy_right_footer 
-{
-    position: fixed;
-    color: black;
-    bottom: 0;
+
+/* ==========================================
+   HEADING
+========================================== */
+
+.heading {
+
     width: 100%;
-    background-color: #f5f5f5;
-    line-height: 3;
+
+    margin: 0;
+
+    padding: 18px 20px;
+
     text-align: center;
+
+    background-color: #f0ad4e;
+
+    color: white;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+
 }
 
-canvas{
-    border: 2px solid white;
-    border-radius: 10px;
-    margin-top: 130px;
-    box-shadow: 5px 5px 5px white;
+
+.heading h1 {
+
+    margin: 0;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
 }
 
-#start , #number_of_objects
-{
+
+/* ==========================================
+   CONTROLS
+========================================== */
+
+.controls {
+
+    text-align: center;
+
+    margin-top: 25px;
+
+}
+
+
+.controls button {
+
     font-size: 18px;
+
+    margin: 0 5px;
+
+    min-width: 150px;
+
+}
+
+
+/* ==========================================
+   STATUS
+========================================== */
+
+.status-container {
+
+    text-align: center;
+
+    margin-top: 20px;
+
+}
+
+
+.status-container h3 {
+
+    display: inline-block;
+
+    margin: 5px;
+
+    padding: 10px 18px;
+
+    font-size: 18px;
+
+    border-radius: 6px;
+
+}
+
+
+/* ==========================================
+   CANVAS
+========================================== */
+
+#canvas-container {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin-top: 25px;
+
+    margin-bottom: 80px;
+
+}
+
+
+canvas {
+
+    display: block;
+
+    width: 640px !important;
+
+    height: 480px !important;
+
+    max-width: 90vw;
+
+    height: auto !important;
+
+    border: 3px solid white;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.5);
+
+    background-color: black;
+
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.copy_right_footer {
+
+    position: fixed;
+
+    left: 0;
+
+    bottom: 0;
+
+    width: 100%;
+
+    padding: 12px;
+
+    text-align: center;
+
+    background-color: rgba(245, 245, 245, 0.95);
+
+    color: black;
+
+    font-size: 15px;
+
+    box-shadow:
+        0 -2px 10px rgba(0, 0, 0, 0.15);
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media screen and (max-width: 700px) {
+
+    .heading h1 {
+
+        font-size: 22px;
+
+    }
+
+
+    .controls button {
+
+        font-size: 16px;
+
+        min-width: 130px;
+
+    }
+
+
+    .status-container h3 {
+
+        font-size: 15px;
+
+    }
+
+
+    #canvas-container {
+
+        margin-top: 15px;
+
+    }
+
 }
